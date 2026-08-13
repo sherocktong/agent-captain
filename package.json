@@ -1,0 +1,42 @@
+{
+  "name": "agent-captain",
+  "version": "0.1.0",
+  "description": "Cross-agent package manager for skills and hooks",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "agent-captain": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "claude-code",
+    "codex",
+    "cursor",
+    "cline",
+    "skills",
+    "hooks",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "yaml": "^2.5.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsup": "^8.2.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
